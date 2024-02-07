@@ -4,45 +4,56 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/style.scss" />
+    <link rel="stylesheet" href="style.scss" />
     <title>Bulbizarre</title>
   </head>
 <body>
-    <header>
+    <header class="identity">
       <h1>Pokémon de base</h1>
-      <div>
+      <div class="identity__name">
         <h2>Bulbizarre</h2>
-        <p>40 PV</p>
+        <p class="red">40 PV</p>
         <img src="./src/img/leaf.png" alt="Energie plante">
       </div>
     </header>
-    <div>
-      <img src="./src/img/bulbizarre.jpg" alt="Pokémon Bulbizarre">
-      <p>Pokémon Graine. Taille : 0.7m, poids: 6.9kg</p>
-    </div>
-    <div>
+
+    <main>
+      <figure>
+        <img class="apparence__image" src="./src/img/bulbizarre.jpg" alt="Pokémon Bulbizarre">
+        <figcaption class="apparence__detail">
+          <p>Pokémon Graine. Taille : 0.7m, poids: 6.9kg</p>
+        </figcaption>
+      </figure>
+
       <div>
-        <img src="./src/img/leaf.png" alt="Energie plante">
-        <img src="./src/img/leaf.png" alt="Energie plante">
+        <section class="attack">
+          <div>
+            <img src="./src/img/leaf.png" alt="Energie plante">
+            <img src="./src/img/leaf.png" alt="Energie plante">
+          </div>
+        <div>
+          <p>Vampigraine A moins de que tous les dégâtes infligés par cette attaque ne soient prévenus, 
+            vous pouvez retirer 1 marqueur de dégâts de Bulbizarre
+          </p>
+          <p>20</p>
+        </div>
       </div>
-      <p>Vampigraine A moins de que tous les dégâtes infligés par cette attaque ne soient prévenus, 
-        vous pouvez retirer 1 marqueur de dégâts de Bulbizarre
-      </p>
-      <p>20</p>
-    </div>
-    <div>
-      <div>
-        <p>Faiblesse</p>
-        <img src="./src/img/fire.png" alt="Energie feu">
-      </div>
-      <div>
-        <p>Résistance</p>
-      </div>
-      <div>
-        <p>Coût de retraite</p>
-        <img src="./src/img/normal.png" alt="Energie normal">
-      </div>
-    </div>
+
+      <ul>
+        <li>
+          <p>Faiblesse</p>
+          <img src="./src/img/fire.png" alt="Energie feu">
+        </li>
+        <li>
+          <p>Résistance</p>
+        </li>
+        <li>
+          <p>Coût de retraite</p>
+          <img src="./src/img/normal.png" alt="Energie normal">
+        </li>
+      </ul>
+    </main>  
+
     <footer>
         <p>Ily a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV 13 No. 1</p>
     </footer>
